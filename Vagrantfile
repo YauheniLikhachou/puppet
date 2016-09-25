@@ -11,14 +11,11 @@ Vagrant.configure(2) do |config|
     			vm1.cpus = 2
     			vm1.memory = "4096"
   		end
-	
-#	config.vm.provision "puppet" do |puppet|
-#		puppet.manifests_path = ["vm", "./source/"]
-#		puppet.manifest_file = "exit_site.pp"
-#	end
-		
-		
-  	config.vm.provision "shell", path: "./source/provision.sh"
+	config.vm.provision "shell", path: "./source/provision.sh"
+	#config.vm.provision "puppet" do |puppet|
+        #              puppet.manifeststs_path = 'runpuppet/manifests'  
+        #              puppet.module_path = 'runpuppet/'
+        #end
   	config.vm.provision "shell", inline: "echo The Puppet-SERVER is DONE!"
 	end
 #-----------------------------------------------------------------------

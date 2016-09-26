@@ -1,0 +1,13 @@
+{
+  "name": "Exit task of puppet",
+  "version": "0.1.0",
+  "author": "Yauheni Likhachou",
+  "summary": "Installing Server & Agent of Puppet",
+  "license": "Open source",
+  "source": "https://github.com/YauheniLikhachou/puppet",
+  "project_page": "https://github.com/YauheniLikhachou/puppet",
+  "issues_url": "https://github.com/YauheniLikhachou/puppet",
+  "dependencies": [ {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"} ],
+  "data_provider": null
+}
+
